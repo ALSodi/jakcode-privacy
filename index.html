@@ -64,14 +64,14 @@
         <li><b>جهات الاتصال:</b> تُقرأ محلياً فقط عند استخدامك قاعدة باسم جهة اتصال، لمطابقة الاسم برقمه. لا تُرفع ولا تُرسل إلى أي مكان.</li>
         <li><b>الإعدادات وعناوين البريد المستلمة</b> التي تُدخلها أنت.</li>
         <li><b>بيانات حساب Gmail للإرسال</b> (البريد وكلمة مرور التطبيقات App Password) — تُخزَّن مشفّرة في التخزين الآمن للنظام (Android Keystore).</li>
-        <li><b>بيانات الاشتراك:</b> عند تفعيل اشتراك مدفوع يُرسَل معرّف مُجزّأ للجهاز (SHA-256 لمعرّف Android، لا يمكن عكسه) وحالة الاشتراك إلى خادم الترخيص الخاص بنا لربط الاشتراك بجهازك.</li>
+        <li><b>بيانات الترخيص:</b> عند تشغيل التطبيق يُرسَل معرّف مُجزّأ للجهاز (SHA-256 لمعرّف Android، لا يمكن عكسه) مع عدد العمليات المجانية المستخدمة وإصدار التطبيق إلى خادم الترخيص الخاص بنا، لحفظ رصيدك المجاني واشتراكك ومنع إعادة ضبط الرصيد بإعادة التثبيت. وعند الاشتراك تُضاف الباقة ومرجع الدفع.</li>
       </ul>
 
       <h2>3. كيف تُستخدم البيانات</h2>
       <p class="sec">تُستخدم الرسائل الملتقطة لغرض واحد: إرسالها إلى عناوين البريد التي حدّدتها أنت. لا نبيع بياناتك، ولا نستخدمها للإعلانات أو التحليلات، ولا يحتوي التطبيق على إعلانات أو أدوات تتبّع.</p>
 
       <h2>4. النقل والتخزين والأمان</h2>
-      <p class="sec">تُخزَّن الرسائل والإعدادات محلياً على جهازك. يتم إرسال البريد مباشرةً من جهازك إلى خوادم Gmail (SMTP) عبر اتصال مشفّر (TLS). لا يمرّ محتوى رسائلك بأي خادم تابع لنا.</p>
+      <p class="sec">تُخزَّن الرسائل والإعدادات محلياً على جهازك. يتم إرسال البريد مباشرةً من جهازك إلى خوادم Gmail (SMTP) عبر اتصال مشفّر (TLS). لا يمرّ محتوى رسائلك بأي خادم تابع لنا. إن اخترت في الإعدادات وضع «خادم خاص» فتُرسَل الرسائل المطابقة إلى عنوان الخادم الذي تُدخله أنت فقط.</p>
 
       <h2>5. الأذونات</h2>
       <ul>
@@ -119,12 +119,12 @@
         <li><b>Contacts:</b> read locally only when you use a contact-name rule, to match the name to its number. Never uploaded or sent anywhere.</li>
         <li><b>Settings and recipient email addresses</b> you enter.</li>
         <li><b>Gmail sending credentials</b> (address and App Password), stored encrypted in Android Keystore.</li>
-        <li><b>Subscription data:</b> when you activate a paid plan, a hashed device identifier (SHA-256 of the Android ID, non-reversible) and subscription status are sent to our licensing server to bind the plan to your device.</li>
+        <li><b>Licensing data:</b> when the app runs, a hashed device identifier (SHA-256 of the Android ID, non-reversible), the number of free operations used and the app version are sent to our licensing server to keep your free quota and subscription and prevent quota resets by reinstalling. On purchase, the plan and payment reference are added.</li>
       </ul>
       <h2>3. How data is used</h2>
       <p class="sec">Captured messages are used for one purpose only: sending them to the email addresses you chose. We never sell your data or use it for advertising or analytics. The app contains no ads or trackers.</p>
       <h2>4. Transfer, storage &amp; security</h2>
-      <p class="sec">Messages and settings are stored locally on your device. Email is sent directly from your device to Gmail SMTP over an encrypted (TLS) connection. Your message content never passes through any server of ours.</p>
+      <p class="sec">Messages and settings are stored locally on your device. Email is sent directly from your device to Gmail SMTP over an encrypted (TLS) connection. Your message content never passes through any server of ours. If you choose "custom server" mode in settings, matching messages are sent only to the server address you enter.</p>
       <h2>5. Permissions</h2>
       <ul>
         <li><b>Receive/read SMS:</b> the core function — capturing and forwarding messages that match your rules.</li>
